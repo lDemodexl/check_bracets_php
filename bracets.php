@@ -62,7 +62,11 @@ class Brackets{
                 }
             }
         }
-        return true;
+        if(count($opend) == 0){
+            return true;
+        }else{
+            return false;
+        }
     }
 
     public function validate(){
